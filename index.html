@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lendas do Brasil - Jogo da Memória</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<p class="nota">
+    Cuidado com as bombas! Elas fazem você perder uma vida.
+</p>
+
+<body>
+
+    <main class="layout">
+
+        <aside class="painel">
+
+            <div class="logo">
+                🌿 FOLCLORE<br>BRASILEIRO 🔥
+            </div>
+
+            <p class="intro">
+                Encontre os pares e descubra as lendas do nosso folclore!
+            </p>
+
+            <h2>Escolha a fase</h2>
+
+<div class="fases">
+    <button class="fase selecionada" data-fase="brasil">
+        🇧🇷 Fase 1
+        <small>Folclore brasileiro</small>
+    </button>
+
+    <button class="fase" data-fase="eua">
+        🇺🇸 Fase 2
+        <small>Lendas dos Estados Unidos</small>
+    </button>
+</div>
+
+<h2>Escolha o nível</h2>
+
+<button class="nivel facil" data-nivel="facil">
+    Fácil
+    <small>6 pares</small>
+</button>
+
+<button class="nivel medio" data-nivel="medio">
+    Médio
+    <small>10 pares</small>
+</button>
+
+<button class="nivel dificil" data-nivel="dificil">
+    Difícil
+    <small>11 pares</small>
+</button>
+
+            <p class="nota">
+                Encontre bombas para ganhar chances extras!
+            </p>
+
+        </aside>
+
+        <section class="boas-vindas" id="boas-vindas">
+
+            <div class="lua">🌕</div>
+
+            <h1>Jogo da Memória</h1>
+
+            <p>
+                Prepare-se para uma aventura pelas lendas
+                e mistérios do folclore brasileiro!
+            </p>
+
+            <div class="destaques">
+                <span>🎨 Cartas ilustradas</span>
+                <span>💣 Bombas surpresa</span>
+                <span>🏆 Pontuação</span>
+            </div>
+
+        </section>
+
+        <section class="area-jogo" id="jogo" hidden>
+
+            <header class="placar">
+                <div>
+
+    <small>Vidas</small>
+    <strong id="vidas">❤️❤️</strong>
+
+</div>
+
+                <div>
+                    <small>Nível</small>
+                    <strong id="nivel-atual">Fácil</strong>
+                </div>
+
+                <div>
+                    <small>Tempo</small>
+                    <strong id="tempo">02:00</strong>
+                </div>
+
+                <div>
+                    <small>Pontos</small>
+                    <strong id="pontos">0</strong>
+                </div>
+
+                <div>
+                    <small>Pares</small>
+                    <strong id="pares">0 / 6</strong>
+                </div>
+
+                <div>
+                    <small>Chances extras</small>
+                    <strong id="chances">0</strong>
+                </div>
+
+            </header>
+
+            <div id="tabuleiro"></div>
+
+            <section id="resultado" class="resultado" hidden></section>
+
+            <button id="trocar-nivel" class="trocar">
+                ← Escolher outro nível
+            </button>
+
+        </section>
+
+    </main>
+    <div id="explosao" class="explosao" hidden>
+    <span class="explosao-icone">💥</span>
+</div>
+<script src="script.js" defer></script>
+</body>
+</html>
